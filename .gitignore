@@ -1,2 +1,5 @@
 # Logs gerados a cada execucao
 *.log
+
+# Relatorios de configuracao gerados pelo Config-PC
+Configuracao_PC_*.txt
