@@ -1,5 +1,2 @@
 # Logs gerados a cada execucao
 *.log
-
-# Executavel compilado (gerado por Compilar-EXE.ps1)
-*.exe
