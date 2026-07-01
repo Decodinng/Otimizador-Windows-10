@@ -1,0 +1,55 @@
+============================================================
+  OTIMIZADOR DE DESEMPENHO - WINDOWS 10 (MODELAGEM 3D)
+============================================================
+
+ARQUIVOS NESTA PASTA:
+  - Otimizar-3D.exe   -> PROGRAMA PRONTO. E so dar 2 cliques.
+  - Otimizar-3D.ps1   -> codigo-fonte do script (o que o .exe roda).
+  - Compilar-EXE.ps1  -> gera o .exe de novo se voce editar o .ps1.
+
+------------------------------------------------------------
+COMO USAR (jeito facil):
+------------------------------------------------------------
+  1. De 2 cliques em  Otimizar-3D.exe
+  2. Clique "Sim" no aviso do Controle de Conta de Usuario (UAC).
+     (precisa de admin para mexer nas configuracoes)
+  3. Escolha a opcao 1 (OTIMIZAR TUDO) no menu.
+  4. Ao terminar, REINICIE o PC.
+
+  Um arquivo de LOG (.log) e salvo nesta pasta a cada execucao,
+  mostrando tudo o que foi feito.
+
+------------------------------------------------------------
+O QUE O SCRIPT FAZ (tudo reversivel):
+------------------------------------------------------------
+  1. Cria PONTO DE RESTAURACAO antes de mexer em nada.
+  2. Ativa plano de energia "Desempenho Maximo" (CPU 100%,
+     sem suspender USB da Wacom, PCI-E sem economia).
+  3. Ajusta efeitos visuais p/ desempenho, prioriza CPU para
+     programas, liga o HAGS (agendamento de GPU por hardware),
+     aumenta o TDR (menos crash de GPU em render pesado) e
+     desliga o Power Throttling.
+  4. Desativa Game Bar / Game DVR (liberam a GPU).
+  5. Reduz apps em segundo plano e sugestoes/anuncios.
+  6. Poe servicos nao essenciais (Xbox, telemetria, fax) em
+     "Manual" - NAO remove, so nao iniciam sozinhos.
+  7. Limpa temporarios, cache, prefetch, lixeira e DNS.
+  8. Ajusta a memoria virtual (pagefile) para cargas 3D.
+  9. (Opcao 2) Verifica integridade do Windows (SFC/DISM) e
+     otimiza os discos (TRIM/desfrag).
+
+------------------------------------------------------------
+E SEGURO?
+------------------------------------------------------------
+  Sim. Nao desinstala drivers, nao apaga programas, nao
+  desativa Windows Update nem antivirus. Se algo nao agradar,
+  use a Restauracao do Sistema (o ponto e criado no inicio).
+
+------------------------------------------------------------
+AVISO DO ANTIVIRUS / SMARTSCREEN
+------------------------------------------------------------
+  Por ser um .exe feito na hora, o Windows SmartScreen pode
+  mostrar "Windows protegeu seu PC". Clique em "Mais informacoes"
+  > "Executar assim mesmo". E o comportamento normal para
+  executaveis sem assinatura digital paga.
+============================================================
